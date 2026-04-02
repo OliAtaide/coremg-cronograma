@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <head>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="imgs/coremg-logo.png" alt="CoreMG Logo">
+          <div class="hr"></div>
+          <img src="imgs/govmg-logo.png" alt="Governo MG Logo">
+          <div class="hr"></div>
+          <img src="imgs/sus-logo.png" alt="SUS Logo">
+        </a>
+      </div>
+    </nav>
+  </head>
+  <main>
+    <div class="container">
+      <div class="section-header">
+        <img src="imgs/coremg-logo-bg.png" alt="">
+        <div class="section-header-text">
+          <div class="section-title">
+            CRONOGRAMA DE CAPACITAÇÕES
+          </div>
+          <div class="section-subtitle">
+            Presenciais e On-line
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <ul class="nav" id="timelineTab" role="tablist">
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+              type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
+              Presenciais
+            </button>
+            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+              type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">
+              On-line
+            </button>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+              tabindex="0">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">
+                      Data
+                    </th>
+                    <th scope="col">
+                      Descrição
+                    </th>
+                    <th scope="col">
+                      Local
+                    </th>
+                    <th scope="col">
+                      Público-Alvo
+                    </th>
+                    <th scope="col">
+                      Expectativa de formados
+                    </th>
+                    <th scope="col">
+                      Responsáveis pela ação
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">30/03 a 01/04/2026</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>@mdo</td>
+                    <td>@social</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">22 a 24/04/2026</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                    <td>@mdo</td>
+                    <td>@social</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">27 a 30/04/2026</th>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>@social</td>
+                    <td>@mdo</td>
+                    <td>@social</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">04 a 08/05/2026</th>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>@social</td>
+                    <td>@mdo</td>
+                    <td>@social</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+              ...
+            </div>
+          </div>
+          <div class="card-buttons">
+            <div class="filter">
+              <span>
+                Exibir
+              </span>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>10</option>
+                <option value="1">20</option>
+                <option value="2">30</option>
+              </select>
+              <span>
+                registros por página
+              </span>
+            </div>
+            <div class="custom-navigation">
+              Mostrando 4 de 4 capacitações
+              <div class="custom-navigation-buttons">
+                <button type="button" class="btn custom-navigation-prev" title="Custom Previous Navigation Button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                    <path
+                      d="M10.4691 14.4699C10.1754 14.7637 10.1754 15.2387 10.4691 15.5293L16.4691 21.5324C16.7629 21.8262 17.2379 21.8262 17.5285 21.5324C17.8191 21.2387 17.8223 20.7637 17.5285 20.473L12.0598 15.0043L17.5316 9.53242C17.8254 9.23867 17.8254 8.76367 17.5316 8.47305C17.2379 8.18242 16.7629 8.1793 16.4723 8.47305L10.4691 14.4699Z"
+                      fill="#016392" />
+                  </svg>
+                </button>
+                <span class="current">
+                  1
+                </span>
+                <button type="button" class="btn custom-navigation-next" title="Custom Next Navigation Button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                    <path
+                      d="M19.5309 14.4699C19.8246 14.7637 19.8246 15.2387 19.5309 15.5293L13.5309 21.5324C13.2371 21.8262 12.7621 21.8262 12.4715 21.5324C12.1809 21.2387 12.1777 20.7637 12.4715 20.473L17.9402 15.0043L12.4684 9.53242C12.1746 9.23867 12.1746 8.76367 12.4684 8.47305C12.7621 8.18242 13.2371 8.1793 13.5277 8.47305L19.5309 14.4699Z"
+                      fill="#016392" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="disclaimer">
+        Cronograma atualizado em 00/00/2026
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-wrapper">
+      <div class="footer-logos">
+        <div class="container">
+          <img src="imgs/funpec-logo-white.png" alt="Funpec Logo">
+          <img src="imgs/lais-logo-white.png" alt="LAIS Logo">
+          <img src="imgs/ufrn-logo-white.png" alt="UFRN Logo">
+          <img src="imgs/ses-logo-white.png" alt="SES Logo">
+          <img src="imgs/govmg-logo-white.png" alt="Governo MG Logo">
+        </div>
+      </div>
+      <div class="footer-text">
+        <div class="container">
+          <span>
+            Secretaria de Estado de Saúde de Minas Gerais
+          </span>
+          <span>
+            Core Digital. Modernização, equidade e inovação na regulação do SUS.
+          </span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
