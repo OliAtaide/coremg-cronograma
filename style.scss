@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
-*{
+* {
   font-family: 'Lato', sans-serif;
 }
 
@@ -123,7 +123,7 @@ main .container {
   }
 }
 
-table {
+.table-desktop {
   width: 100% !important;
   font-size: 16px;
   line-height: 24px;
@@ -159,6 +159,34 @@ table {
 
     td {
       font-weight: 400;
+    }
+  }
+}
+
+.table-mobile {
+  th {
+    color: #016392;
+  }
+
+  thead{
+    th {
+      text-align: center;
+    }
+  }
+
+  tbody {
+
+    th {
+      font-weight: 400;
+      width: 25%;
+    }
+
+    td {
+      color: #333;
+    }
+
+    * {
+      font-size: 14px;
     }
   }
 }
@@ -232,4 +260,54 @@ table {
   font-weight: 400;
   line-height: 24px;
   margin-top: 12px;
+}
+
+@media (min-width: 768px) {
+  .table-mobile{
+    display: none;
+  }
+}
+
+
+@media (max-width: 767.98px) {
+
+  .table-desktop,
+  .card-buttons {
+    display: none;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  main {
+    .container {
+      margin-block: 40px;
+    }
+
+    &::before {
+      content: none;
+    }
+  }
+
+  .section-header {
+    flex-direction: column;
+    gap: 8px;
+
+    img {
+      width: 100%;
+    }
+
+    .section-title {
+      font-size: 35px;
+    }
+
+    .section-subtitle {
+      font-size: 28px;
+    }
+  }
+
+  .footer-logos .container{
+    flex-wrap: wrap;
+  }
 }
