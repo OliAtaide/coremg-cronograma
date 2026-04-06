@@ -230,6 +230,7 @@ main .container {
   .custom-navigation {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 16px;
   }
 
@@ -309,5 +310,15 @@ main .container {
 
   .footer-logos .container{
     flex-wrap: wrap;
+  }
+}
+
+colgroup col {
+  &:first-child, &:nth-child(2){
+    width: 15%;
+  }
+
+  &:nth-child(3), &:last-child{
+    width: 35%;
   }
 }

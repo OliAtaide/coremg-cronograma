@@ -196,6 +196,7 @@ main .container {
 .card-buttons .custom-navigation {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 16px;
 }
 .card-buttons button {
@@ -260,4 +261,10 @@ main .container {
   .footer-logos .container {
     flex-wrap: wrap;
   }
+}
+colgroup col:first-child, colgroup col:nth-child(2) {
+  width: 15%;
+}
+colgroup col:nth-child(3), colgroup col:last-child {
+  width: 35%;
 }/*# sourceMappingURL=style.css.map */
